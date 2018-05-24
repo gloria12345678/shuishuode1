@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>谁说的</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        $(document).ready(function () {
+            $("#down").click(function () {
+                $(".answer").slideDown("slow");
+            });
+            $("#off").click(function () {
+                $(".answer").slideUp("slow");
+            })
+
+
+            $("#aa").click(function () {
+                $("#bb").slideDown("slow");
+            });
+            $("#").click(function () {
+                $("#bb").slideUp("slow");
+            })
+        });
+
+    </script>
+    <style>
+        .navba1{
+                    width: 100%; height: 50px
+                }
+                .nav{
+                    width: 100%;
+                    background-color: #41b5fa;
+                    float: right;
+                    padding: 0px;
+                }
+                a{
+                    color: white;
+                }
+                .center{
+                    width: 80%;
+                    height: 300px;
+                    margin-left: 10%;
+                    margin-top: 4%;
+                    margin-bottom: 100px;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    flex-wrap: wrap;
+                }
+                .logo{
+                    width: 300px;
+                    height: 250px;
+                }
+                .center h1{
+                    width:129px;
+                    margin-bottom: 0px;
+
+                }
+                .center h5{
+                    width: 170px;
+                    height:6%;
+                    margin-bottom: 0px;
+                }
+                .col-sm-10{
+                    margin-left: 9%;
+                }
+                .answer{
+                    width: 100%;margin-top: 50px;
+
+                    border: 1px solid #4e4e4e73;
+                    border-radius: 10px;
+                }
+                .answer_off{
+                    width: 100%;
+                    height: 37px;
+                    border-bottom: 1px solid #4e4e4e73;
+                }
+                .answer_off div{
+                    float: right;
+                    font-size: 19px;
+                    margin-right: 10px;
+                    margin-top: 8px;
+                }
+                .answer_content div{
+                    margin: 5%;
+                }.footing{
+                     width: 100%;
+                     height: 30px;
+                     margin-top: 50px;
+                     border-top: 2px solid #4e4e4e73;
+                     text-align: center;
+                     line-height: 30px;
+                 }
+
+                @media screen and (max-width: 771px){
+                    .center{
+                        margin-top: 15%;
+                    }
+                    .center h5{
+                        margin-top: 132px;
+                    }
+                }
+                @media screen and (max-width:557px){
+                    .center h5{
+                        margin-top: 0px;
+                        height: 30%;
+                    }
+                }
+                @media screen and (max-width: 487px){
+                    .center{
+                        margin-bottom: 72px;
+                    }
+                    .logo{
+                        width: 196px;
+                        height: 166px;
+                        margin-top: 43px;
+                    }
+                    .center h1 {
+                        width: 129px;
+                        margin-bottom: -1px;
+                        margin-left: 138px;
+                        margin-top: -2px;
+                    }
+                    .center h5 {
+                        margin-top: 56px;
+                        /* height: 30%; */
+                    }
+
+                }
+                @media screen and (max-width: 332px) {
+                    .center {
+                        margin-bottom: 72px;
+                    }
+
+                    .center h1 {
+                        margin-left: 104px;
+                    }
+                }
+        .qq{
+            width: 100%;
+            opacity: 0.2;
+            z-index: -1;
+            position: absolute;
+        }
+        .input{
+            margin: 83px 1% 0px 1%;
+            border: 2px solid #fffbfd;
+            border-radius: 8px;
+            background-color: #0a6d84;
+        }
+        .h3, h3 {
+            color: white;
+        }
+        label {
+            color: white;
+        }
+        textarea {
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            margin-bottom: 30px;
+            margin-left: 12%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="qq">
+<div class="navba1">
+<ul class="nav nav-pills">
+    <li role="presentation" class="active"><a href="#">其他</a></li>
+    <li role="presentation"><a href="#" id="aa">联系我们</a></li>
+</ul>
+</div>
+<div class="center">
+        <div class="logo">
+          <img src="img/logo.png" style="width: 100%;height: 100%">
+        </div>
+           <h1>谁说的?</h1>
+           <h5>快速搜查国内外名言作者</h5>
+    </div>
+<div class="container">
+    <div class="row">
+    <div class="col-lg-10 col-sm-10 col-xs-10">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id="down">Go!</button>
+      </span>
+        </div>
+    </div>
+</div>
+    <div class="row">
+        <div class="col-lg-10 col-sm-10 col-xs-10">
+          <div class="answer" style="display: none">
+              <div class="answer_off">
+                  <div class="glyphicon glyphicon-remove" aria-hidden="true" id="off"></div>
+              </div>
+              <div class="answer_content">
+                  <div>
+                  在艰苦中成长成功之人，往往由于心理的阴影，
+                  会导致变态的偏差。这种偏差，便是对社会、
+                  对人们始终有一种仇视的敌意，不相信任何一个人，
+                  更不同情任何一个人。爱钱如命的悭吝，还是心理变态上的次要现象。
+                  相反的，有器度、有见识的人，他虽然从艰苦困难中成长，
+                  反而更具有同情心和慷慨好义的胸襟怀抱。
+                  因为他懂得人生，知道世情的甘苦。 —— 南怀瑾
+                  </div>
+              </div>
+          </div>
+        </div>
+</div>
+    </div>
+<div class="footing">sdgasdgasdfs</div>
+</div>
+<div class="container"  id="bb" style="z-index: 1;">
+    <div class="row input">
+        <div class="col-lg-10 col-sm-10 col-xs-10">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <h3>联系我们</h3>
+            </div>
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Email</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary">提交</button>
+            <button type="button" class="btn btn-primary">取消 </button>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
